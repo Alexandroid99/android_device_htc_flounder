@@ -20,13 +20,15 @@ PRODUCT_PACKAGES := \
     wpa_supplicant \
     wpa_supplicant.conf
 
-# Path to kernel source, in my case this:
+# Path to kernel source, should be this:
 
-TARGET_KERNEL_SOURCE := device/tegra
+TARGET_KERNEL_SOURCE := device/htc/flounder
 
 
 #ifeq ($(TARGET_PREBUILT_KERNEL),)
 #ifeq ($(USE_SVELTE_KERNEL), true)
+
+#Fsss, prebuilt kernels are so last month
 #LOCAL_KERNEL := device/htc/flounder_svelte-kernel/Image.gz-dtb
 #else
 #LOCAL_KERNEL := device/htc/flounder-kernel/Image.gz-dtb
